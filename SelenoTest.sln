@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B86E81
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelenoTest.App", "SelenoTest.App\SelenoTest.App.csproj", "{4A935FAA-A543-4D56-AF30-94246D3626C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelenoTest.UiTests", "SelenoTest.UiTests\SelenoTest.UiTests.csproj", "{0B468A53-EC13-4F4C-8086-3F163896BA03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{4A935FAA-A543-4D56-AF30-94246D3626C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A935FAA-A543-4D56-AF30-94246D3626C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A935FAA-A543-4D56-AF30-94246D3626C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B468A53-EC13-4F4C-8086-3F163896BA03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B468A53-EC13-4F4C-8086-3F163896BA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B468A53-EC13-4F4C-8086-3F163896BA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B468A53-EC13-4F4C-8086-3F163896BA03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
