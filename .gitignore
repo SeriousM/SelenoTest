@@ -1,0 +1,63 @@
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.Publish.xml
+InHouse/
+[Dd]ebug/
+bin/
+obj/
+csx/
+*.lib
+*.sbr
+*.dbmdl
+_ReSharper*/
+[Tt]est[Rr]esult*
+*.dotCover
+nCrunchTemp_*
+_NCrunch_*
+_TeamCity.*
+
+StyleCop.Cache
+# ignore the styleop settings per project, only the "root" stylecop setting will be taken
+*/Settings.StyleCop
+
+/Settings.resharper
+
+#ignore specific files
+Innov8.Database.sql
+/packages/NUnit.2.5.10.11092/tools/TestResult.xml
+
+/Innov8.Database/sql/
+
+jmeter.log
+/_NCrunch_Innov8
+
+#ignore nuget packages
+packages/*
+!packages/repositories.config
+
+!.nuget/*
+!.nuget/NuGet.exe
+!.nuget/NuGet.config
+!.nuget/NuGet.targets
+
+log4net.xml
+log4net.pdb
+log4net.dll
