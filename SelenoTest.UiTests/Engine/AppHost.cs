@@ -1,4 +1,6 @@
-﻿using Castle.Core.Logging;
+﻿using System.Diagnostics;
+using System.Linq;
+using Castle.Core.Logging;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using SelenoTest.App.App_Start;
@@ -39,9 +41,16 @@ namespace SelenoTest.UiTests.Engine
 
 		public static void Stop()
 		{
-			SelenoHost.Host.WebServer.Stop();
-			SelenoHost.Host.Browser.Close();
-			SelenoHost.Host.ShutDown();
+			try
+			{
+				SelenoHost.Host.WebServer.Stop();
+				SelenoHost.Host.Browser.Close();
+				SelenoHost.Host.ShutDown();
+			}
+			finally
+			{
+				Process.GetProcessesByName("ChromeDriver").ToList().ForEach(x => x.Kill());
+			}
 		}
 	}
 }
