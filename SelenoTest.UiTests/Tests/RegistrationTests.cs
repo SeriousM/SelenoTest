@@ -9,10 +9,23 @@ namespace SelenoTest.UiTests.Tests
 	[TestFixture]
 	public class RegistrationTests
 	{
-		[SetUp]
+		[TestFixtureSetUp]
 		public void Setup()
 		{
-			AppHost.Start();
+			try
+			{
+				AppHost.Start();
+			}
+			catch
+			{
+				AppHost.Stop();
+			}
+		}
+
+		[TestFixtureTearDown]
+		public void TearDown()
+		{
+			AppHost.Stop();
 		}
 
 		[Test]
